@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="/logo/gg-low-resolution-logo-white-on-transparent-background.png"
+    />
+    <link
+      rel="stylesheet"
+      href="/traditional-food/traditional-food-style.css"
+    />
+    <title>Traditional Food</title>
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header class="header-sidebar">
+        <div class="image-text">
+          <span class="image">
+            <a href="/index.html">
+              <img src="/logo/georgia.png" alt="logo"
+            /></a>
+          </span>
+          <div class="text header-text">
+            <span class="name">Georgian</span>
+            <span class="profession">Gid</span>
+          </div>
+        </div>
+        <i class="bx bxs-chevron-right toggle"></i>
+      </header>
+      <form class="menu-bar start-search" id="empty">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input
+              type="Search"
+              id="search"
+              placeholder="Search..."
+              class="search-input"
+            />
+          </li>
+          <ul class="menu-links">
+            <li class="nav-links">
+              <a href="#">
+                <i class="bx bx-map icon"></i>
+                <span class="text nav-text">Location</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="#">
+                <i class="bx bx-hotel icon"></i>
+                <span class="text nav-text">Hotel</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="/traditional-food/traditional-food-index.html">
+                <i class="bx bx-restaurant icon"></i>
+                <span class="text nav-text">Traditional Food</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="#">
+                <i class="bx bx-drink icon"></i>
+                <span class="text nav-text">Drink</span>
+              </a>
+            </li>
+            <li class="nav-links">
+              <a href="/gid/gind-index.html">
+                <i class="bx bx-user icon"></i>
+                <span class="text nav-text">Gid</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </nav>
+
+    <main>
+      <div class="traditional-food-information"></div>
+      <div class="traditional-food-recommendation-restaurant"></div>
+      <div class="search-card"></div>
+      <div class="traditional-food-content"></div>
+      <div class="modal-card"></div>
+    </main>
+
+    <!-- constant & utils  -->
+    <script src="/traditional-food/constants/catalog-script.js"></script>
+    <script src="/traditional-food/constants/root-script.js"></script>
+    <script src="/traditional-food/utils/localStorigeUtil.js"></script>
+
+    <!-- traditional-food-information -->
+    <link
+      rel="stylesheet"
+      href="/traditional-food/components/Information/information-style.css"
+    />
+    <script src="/traditional-food/components/Information/information-script.js"></script>
+
+    <!-- traditional-food-recommendation-restaurant -->
+    <link
+      rel="stylesheet"
+      href="/traditional-food/components/Restaurant/restaurant-style.css"
+    />
+    <script src="/traditional-food/components/Restaurant/restaurant-script.js"></script>
+
+    <!-- traditional food cards -->
+    <link
+      rel="stylesheet"
+      href="/traditional-food/components/Georgian Traditional Food/card-traditional-food-style.css"
+    />
+    <script src="/traditional-food/components/Georgian Traditional Food/card-traditional-food-script.js"></script>
+
+    <script src="/traditional-food/traditinal-food-script.js"></script>
+  </body>
+</html>

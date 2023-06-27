@@ -1,0 +1,49 @@
+section {
+  max-width: 1150px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 95%;
+}
+#card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  margin-left: 105px;
+  gap: 25px;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px 6px;
+  height: 400px;
+  background: #fff;
+}
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.card .card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border-radius: 6px 6px 0 0;
+}
+
+.text {
+  margin-top: 15px;
+  cursor: default;
+}
+.name {
+  font-size: 21px;
+  font-weight: 600;
+}
+.gender {
+  font-size: 18px;
+  font-weight: 200;
+}
+.location {
+  font-size: 16px;
+  font-weight: 200;
+}

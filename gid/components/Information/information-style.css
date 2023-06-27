@@ -1,0 +1,64 @@
+.header-container {
+  position: relative;
+}
+.header-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  list-style: none;
+}
+.header-container.header-elements__city {
+  position: relative;
+}
+.header-elements__city {
+  width: 100%;
+  height: 526px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.header-elements__map {
+  position: absolute;
+  top: 150px;
+  left: 590px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.header-elements__name {
+  top: 330px;
+  left: 695px;
+  color: white;
+  font-weight: 600;
+  font-size: 23px;
+  position: absolute;
+  cursor: default;
+}
+.header-elements__about {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 85%;
+  margin-left: 135px;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: default;
+}
+.header-elements__question,
+.header-elements__companion {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  margin-left: 135px;
+}
+.header-elements__question {
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 55px;
+}
+.header-elements__companion {
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 5px;
+}

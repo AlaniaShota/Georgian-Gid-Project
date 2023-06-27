@@ -1,0 +1,143 @@
+.title-text {
+  position: relative;
+  left: 120px;
+  font-size: larger;
+  font-weight: 600;
+  width: 43px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid red;
+}
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.container .restaurant-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-left: 105px;
+  width: 100%;
+}
+.restaurant-card {
+  list-style: none;
+}
+.container .restaurant-card .restaurant-element {
+  border-radius: 6px;
+  height: 420px;
+  display: none;
+  background: #fff;
+}
+.restaurant-element:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.container .restaurant-card .restaurant-element:nth-child(1),
+.container .restaurant-card .restaurant-element:nth-child(2),
+.container .restaurant-card .restaurant-element:nth-child(3) {
+  display: inline-block;
+}
+.container .restaurant-card .restaurant-element .restaurant-element__img {
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 222px;
+}
+.restaurant-element__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
+}
+
+.restaurant-element__name {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 15px;
+  font-size: 21px;
+  font-weight: 400;
+}
+.restaurant-element__location {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 15px;
+  font-size: 14px;
+}
+
+.button-48.restaurant-card__see-more {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 205px;
+  border: 1px solid black;
+}
+
+
+.button-48 {
+  appearance: none;
+  background-color: #ebebeb;
+
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #ffffff;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #ebebeb;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
